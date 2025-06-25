@@ -119,7 +119,7 @@ print(c)
 
 # 12
 x = '8' * 68
-while ('222' in x) or ('888' in x):
+while '222' in x or '888' in x:
     if '222' in x:
         x = x.replace('222', '8', 1)
     else:
