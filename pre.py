@@ -33,7 +33,7 @@ for i in range(1000, 2000):
 # 6
 from turtle import *
 
-screensize(2000, 200)
+screensize(2000, 2000)
 k = 30
 lt(90)
 down()
