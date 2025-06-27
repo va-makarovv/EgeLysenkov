@@ -1,5 +1,5 @@
 # 2
-print("x y z w")
+'''print("x y z w")
 for x in 0, 1:
     for y in 0, 1:
         for z in 0, 1:
@@ -487,4 +487,56 @@ for c in clS:
 xP = int(xP / 4 * 10000)
 yP = int(yP / 4 * 10000)
 
-print(xP, yP)
+print(xP, yP)'''
+
+'''for n in range(3,10_001):
+    s = "1" + "9"*n
+    while "15" in s or "599" in s or "999" in s:
+        if "15" in s:
+            s = s.replace("15","9",1)
+        if "599" in s:
+            s = s.replace("599","5",1)
+        if "999" in s:
+            s = s.replace("999","19",1)
+    sumS = s.count("1") + s.count("5")*5 + s.count("9") * 9
+
+    if sumS == 30:
+        print(n)'''
+
+'''num = []
+for n in range(3,4000):
+    s = "1" + "2" * n
+    while "12" in s or "322" in s or "2222" in s:
+        if "12" in s:
+            s = s.replace("12","2",1)
+        if "322" in s:
+            s = s.replace("322","21",1)
+        if "2222" in s:
+            s = s.replace("2222","3",1)
+
+    sumS = s.count("1") + s.count("2") * 2 + s.count("3") * 3
+
+    num.append(sumS)
+
+print(max(num))'''
+
+from math import *
+
+
+for n in range(1000):
+    s = ">" + 17*"0" + "3"*n + "2"*17
+
+    while ">3" in s or ">2" in s or ">0" in s:
+        if ">3" in s :
+            s = s.replace(">3","22>",1)
+        if ">2" in s:
+            s = s.replace(">2","2>",1)
+        if ">0" in s:
+            s = s.replace(">0","3>",1)
+
+    sumS = s.count("2")*2 + s.count("3")*3
+
+    if sumS**0.5 == int(sumS**0.5):
+        print(n)
+        break
+
